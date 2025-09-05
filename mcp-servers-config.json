@@ -1,0 +1,38 @@
+{
+    "mcpServers": {
+        "contentpage-agent": {
+            "command": "C:/Program Files/Java/jdk-17/bin/java",
+            "args": [
+                "-jar", 
+                "C:/Developer/VSCodeWorkspace/mcpserverdemo/build/libs/mcpserverdemo-api.jar"
+            ]
+        },
+        "document-agent": {
+            "command": "C:/Program Files/Java/jdk-17/bin/java",
+            "args": [
+                "-Dspring.ai.mcp.server.studio=mcp",
+                "-Dspring.port=9998",
+                "-jar", 
+                "C:/Developer/VSCodeWorkspace/documentmcpserverdemo/build/libs/documentmcpserverdemo-api.jar"
+            ]
+        },
+        "faq-agent": {
+            "command": "C:/Program Files/Java/jdk-17/bin/java",
+            "args": [
+                "-Dspring.ai.mcp.server.studio=mcp",
+                "-Dspring.port=9998",
+                "-jar", 
+                "C:/Developer/VSCodeWorkspace/faqaiagrentdemo/build/libs/faqaiagrentdemo-api.jar"
+            ]
+        },
+        "link-agent": {
+            "command": "C:/Program Files/Java/jdk-17/bin/java",
+            "args": [
+                "-Dspring.ai.mcp.server.studio=mcp",
+                "-Dspring.port=9998",
+                "-jar", 
+                "C:/Developer/VSCodeWorkspace/linkaiagrentdemo/build/libs/linkaiagrentdemo-api.jar"
+            ]
+        }
+    }
+}
